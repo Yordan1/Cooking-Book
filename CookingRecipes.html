@@ -1,0 +1,168 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+        <title>Recipes</title>
+
+        <style>
+            body{
+                    background-image: url("http://skendaproducts.com/wp-content/uploads/2015/07/master-chef-3d_159854.jpg");
+                    background-size: cover;
+                }
+
+                @media only screen and (min-device-width: 400px) {
+                body { 
+                   background-image: url("http://skendaproducts.com/wp-content/uploads/2015/07/master-chef-3d_159854.jpg"); 
+                }
+            }
+
+
+            .search-bar {
+                position: fixed;
+                display: inline-block;
+                margin-left: 50%;
+                top: 10%;
+                transform: translateX(-50%);
+                width: 95%;
+                max-width: 344px;
+                height: 48px;
+                background: #fff;
+                border-radius: 2px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+                overflow: hidden;
+            }
+
+            input {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 250px;
+                height: 40px;
+                left: 172px;
+                margin: 4px 0;
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            ul#wrapper {
+                list-style: none;
+                display: inline-block;
+                margin-top: 100px;
+            }
+
+            li {
+                width: 200px;
+                height: 100px;
+               
+                float: left;
+                margin: 10px;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+                border-radius: 2px;
+                text-align: center;
+                animation: 3s ease-out 0s 1 slideInFromLeft;
+            }
+
+            a {
+                font-size: 24px;
+                color: cyan;
+                line-height: 100px;
+                font-family: monospace;
+                text-decoration: none;
+            }
+            @keyframes slideInFromLeft {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="nav navbar">
+            <div class="container">
+                <div class="nav navbar-left">
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href="Cookingbook Main page.html">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="col-md">    
+                <div class="search-bar">
+                    <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" 
+                    placeholder="Search" />
+                </div>      
+            <ul id="wrapper">
+                <br />
+                <li>
+                    <a href="SpaghettiBolognese.html">Spaghetti
+                        <img src="http://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2017/10/Spaghetti-Bolognese.jpg"    style="width: 20%;" />
+                    </a>
+                </li>
+                <li>
+                    <a href="PizzaKaprichoza.html">Pizza 
+                        <img src="https://i.pinimg.com/originals/10/de/da/10deda6e4e3934345c278c25ae26e9ba.jpg" 
+                        alt="Pizza" style=" width: 20%;"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="Sushi.html">Sushi
+                        <img src="https://stanimirmihov.com/wp-content/uploads/2016/06/%D0%BA%D0%B0%D0%BA%D0%B2%D0%BE-%D0%B5-%D1%81%D1%83%D1%88%D0%B8-1024x576.jpg" 
+                        alt="Sushi" style=" width: 20%;"/>    
+                    </a>
+                </li>
+                <li>
+                    <a href="AmericanBurger.html">Burger
+                        <img src="https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/lunch-dinner_burgers_all-american-burger.jpg" 
+                        alt="American Burger" style=" width: 20%;"/>       
+                    </a>
+                </li>
+                <li>
+                    <a href="MeatSteak.html">Meat Steak
+                        <img src="https://d33wubrfki0l68.cloudfront.net/7d5a1e5ab7a4de3d6981fc0c61506402948dc6e5/f010b/assets/images/food/17-07-12-sous-vide-flank-steak-bavette_large.jpg" 
+                        alt="Meat Steak" style=" width: 20%;"/>       
+                    </a>
+                </li>
+                <li>
+                    <a href="BeanSoup.html">Bean Soup
+                        <img src="http://images.media-allrecipes.com/userphotos/960x960/3994480.jpg" 
+                        alt="Bean Soup" style=" width: 20%;" />       
+                    </a>
+                </li>
+                <li>
+                    <a href="TasKebap.html">Tas Kebap
+                        <img src="http://www.izbite.com/images/photo/Tas_kebap_sas_svinsko_meso_3.jpg" 
+                        alt="Tas Kebap" style=" width: 20%;" />         
+                    </a>
+                </li>
+                <li>
+                    <a href="Imambayildi.html">Imambayildi 
+                        <img src="https://img.taste.com.au/ipv0eAYF/taste/2017/03/imam-bayildi-124884-1.jpg" 
+                        alt="Imambayildi" style=" width: 20%;" />         
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <script src="myscripts.js"></script>
+    </body>
+</html>

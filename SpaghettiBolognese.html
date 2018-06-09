@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SpaghettiBolognese</title>
+	    <meta charset="UTF-8" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1">          
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">               
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+        <style>
+            body{
+                background-image: url("http://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2017/10/Spaghetti-Bolognese.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            p{
+                font-size: 60%;
+                margin-top: 20%;
+
+            }
+            #move{
+                width: 40%;
+                border: 1px solid gray;
+                margin-left: 64%;            
+                background-image: url("https://previews.123rf.com/images/wayoutwest/wayoutwest0705/wayoutwest070500773/951278-blank-white-lined-notebook-page-.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-bottom: 10%;             
+            }
+            ol{
+                display: inline-block;
+                font-size: 50%;
+                list-style-type: square;
+            }
+            a{
+                padding: 1%;
+                border: 1px solid gray;
+                background-color: lightgray;
+                text-align: center;
+                font-size: 20px;
+                box-shadow: 5px 5px;
+                text-underline-position: none;
+                color: gray;
+            }
+            @keyframes slideInFromLeft {
+                  0% {
+                    transform: translateX(-100%);
+                  }
+                  100% {
+                    transform: translateX(0);
+                  }
+            }
+            body{
+                 animation: 2s ease-out 0s 1 slideInFromLeft;
+                 padding: 30px;
+            }
+            ol{
+                animation: 2s ease-out 0s 1 slideInFromLeft;
+                padding: 30px;
+                list-style-type: none;
+            }
+            .para1{
+                font-size: 100%;
+
+            }
+            h1{
+                padding-top: 10%;
+            }
+           
+        </style>                         
+    </head>
+    <body>
+        <div class="container text-center" id="move">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="para">
+                            <h1 style="font-size: 2vw;">Spaghetti Bolognese</h1>
+                            <strong>                                                        
+                                <h2 style="font-size: 1.75vw;">Ingredients:<h2>
+                               <ol style="font-size: 0.75vw;">
+                                    <li>1 tbsp olive oil</li>
+                                    <li>4 rashers smoked streaky bacon, finely chopped</li>  
+                                    <li>
+                                        2 medium onions, finely chopped
+                                    </li>
+                                    <li>2 carrots, trimmed and finely chopped</li>
+                                    <li>2 celery sticks, finely chopped</li>
+                                    <li>2 garlic cloves, finely chopped</li>
+                                    <li>2-3 sprigs rosemary, leaves picked and finely chopped</li>
+                                    <li>500g beef mince</li> <br />                               
+                                    <strong>For the Bolognese sauce:</strong>
+                                    <li>2 x 400g tins plum tomatoes</li>
+                                    <li>
+                                        small pack basil, leaves picked, ¾ <br />
+                                        finely chopped and the rest left whole for garnish
+                                    </li>
+                                    <li>1 tsp dried oregano</li>
+                                    <li>2 fresh bay leaves</li>
+                                    <li>2 tbsp tomato purée</li>
+                                    <li>1 beef stock cube</li>
+                                    <li>1 red chilli, seeded and finely chopped (optional)</li>
+                                    <li>125ml red wine</li>
+                                    <li>6 cherry tomatoes, sliced in half</li>
+                                    To season and serve:
+                                    <li>75g parmesan, grated, plus extra to serve</li>
+                                    <li>400g spaghetti</li>
+                                    <li>crusty bread, to serve (optional)</li>
+                                </ol>
+                            </strong>
+                        </p>
+                        <p class="para1">
+                            <h3 style="font-size: 1.75vw;">Method:</h3>
+                            <strong style="font-size: 0.73vw;">                           
+                                Put a large saucepan on a medium heat and add 1 tbsp olive oil.<br />
+                                Add the bacon and fry for 10 mins until golden and crisp.<br />
+                                Reduce the heat and add the onion, carrot, <br />
+                                celery, garlic and rosemary, then fry for 10 mins. <br />
+                                Stir the veg often until it softens.<br />
+                                Increase the heat to medium-high,<br />
+                                add the mince and cook stirring for 3-4 mins until the meat<br />
+                                is browned all over.<br />
+                                Add the tinned tomatoes, chopped basil, oregano, bay leaves,<br />
+                                tomato purée, stock cube, chilli, wine and cherry tomatoes.<br />
+                                Stir with a wooden spoon, breaking up the plum tomatoes.<br />
+                                Bring to the boil, reduce to a gentle simmer and cover with a lid.<br />
+                                Cook for 1 hr 15 mins stirring occasionally, until you have a rich,<br />
+                                thick sauce. Add the Parmesan, check the seasoning and stir.<br />
+                                When the Bolognese is nearly <br />
+                                finished cook the spaghetti following pack instructions.<br />
+                                Drain the spaghetti and stir into the Bolognese sauce.<br />
+                                Serve with grated Parmesan, the extra basil leaves and crusty bread.<br />
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <nav class="navbar-fixed-top">
+                        <a href="Cookingbook Main page.html" class="btn btn-primary btn-default btn-info">GO Home</a>
+                        <a href="CookingRecipes.html" class="btn btn-primary btn-default">GO All Recipes</a>.
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </body>                    
+</html>
